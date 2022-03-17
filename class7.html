@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Boot Form</title>
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<style>
+h1
+{
+margin:20px;
+padding:20px 20px;
+}
+</style>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="jumbotrons text-primary text-center">
+		<h1 class="h-block">Facebook SignUp</h1>
+	</div>
+	<form class="form">
+		<div class="form group row">
+			<div class="form group col">
+				<label for="fname">First Name</label>
+				<input type="text" name="fname" placeholder="First Name" class="form-control">
+			</div>
+			<div class="form group col">
+				<label for="lname">Last Name</label>
+				<input type="text" name="lname" placeholder="Last Name" class="form-control">
+			</div>
+		</div>
+		
+		<div class="form group">
+			<label for="email">Enter the mail address</label>
+			<input type="email" name="email" placeholder="Email" class="form-control">
+		</div>
+		
+		<div class="form group row">
+			<div class="form-inline col">
+				<label for="day">Select Day</label>
+					<select class="form-control" name="day">
+						<option >1</option><option >2</option>
+						<option >3</option><option >4</option>
+						<option >5</option>
+						<option >6</option><option >7</option>
+						<option >8</option><option >9</option>
+						<option >10</option><option >11</option>
+						<option >12</option><option >13</option>
+						<option >14</option><option >15</option>
+						<option >16</option><option >17</option>
+						<option >18</option><option >19</option>
+						<option >20</option><option >21</option>
+						<option >22</option><option >23</option>
+						<option >24</option><option >25</option>
+						<option >26</option><option >27</option>
+						<option >28</option><option >29</option>
+						<option >30</option><option >31</option>
+					</select>
+			</div>
+			
+			<div class="form-inline col">
+				<label for="month">Select Month</label>
+				<select class="form-control" name="month">
+						<option >1</option><option >2</option>
+						<option >3</option><option >4</option>
+						<option >5</option>
+						<option >6</option><option >7</option>
+						<option >8</option><option >9</option>
+						<option >10</option><option >11</option>
+						<option >12</option>
+					</select>
+			</div>
+			
+			<div class="form-inline col">
+				<label for="year">Select Year</label>
+					<select name="year" class="form-control">
+						<option >1991</option><option >1992</option>
+						<option >1993</option><option >1994</option>
+						<option >1995</option>
+						<option >1996</option><option >1997</option>
+						<option >1998</option><option >1999</option>
+						<option >2000</option><option >2001</option>
+						<option >2002</option><option >2003</option>
+						<option >2004</option><option >2005</option>
+						<option >2006</option><option >2007</option>
+						<option >2008</option><option >2009</option>
+						<option >2010</option><option >2011</option>
+						<option >2012</option><option >2013</option>
+						<option >2014</option><option >2015</option>
+					</select>
+			</div>
+			
+		</div>
+		<div class="form group">
+			<label for="country">Mention the country</label>
+			<input type="text" name="country" placeholder="Country" class="form-control">
+		</div>
+			
+		<div class="form group">
+			<label for="mobile">Mobile number</label>
+			<input type="text" name="mobile" placeholder="Mobile" class="form-control">
+		</div>
+			
+		<div class="form group row">
+			<div class="form-inline col">
+				<label for="choose">Choose password</label>
+				<input type="password" name="choose" placeholder="Choose" class="form-control">
+			</div>
+			<div class="form-inline col">
+				<label for="confirm">Confirm password</label>
+				<input type="password" name="confirm" placeholder="Confirm" class="form-control">
+			</div>
+		</div>
+			
+		<div class="form-checked">
+			<div class="form-inline">
+				<label for="gender">Select Gender</label>
+				<input type="radio" name="gender" value="male" class="form-control" style="margin:4px; margin-left: 30px">Male
+				<input type="radio" name="gender" value="female" class="form-control" style="margin-left: 30px">Female
+				<input type="radio" name="gender" value="other" class="form-control" style="margin-left: 30px">Other
+			</div>
+		</div>
+			
+		<div class="form-checked form-inline">
+				
+				<input type="checkbox" name="news" value="Agree for news letter" class="form-control" style="margin:4px; margin-left: 30px">Agree for news letter
+				<input type="checkbox" name="contribute" value="Will you contribute for FB development" class="form-control" style="margin-left: 30px">Will you contribute for FB development
+		</div>
+			
+		<div class="form group text-center">		
+			<button class="btn btn-outline-primary ">Sign Up</button>
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
+				<path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
+			  </svg>		
+			<button class="btn btn-outline-dark badge-pill">Clear</button> 
+		</div>
+		
+	</form>
+</div>
+</body>
+</html>
